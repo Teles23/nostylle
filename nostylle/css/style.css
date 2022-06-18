@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap");
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	/*background-color: black;*/
+    font-size: large; 
+  
+    background: linear-gradient(#10151a,#283742,#89a6b7,#506a7a);
+    
+    background-size: 300% 300%;
+    animation: colors 15% ease infinite;
+}
+@keyframes animacao{
+	from {
+		background-color: white;}
+	to	{background-color: /*#795409*/#eee6ae;
+	}
+
+}
+@keyframes colors{   
+	0%{
+    background-position: 0% 50%;
+	}
+
+	50%{
+    background-position: 100% 50%;
+	}
+	100%{
+    background-position: 0% 50%;
+	}
+}
+h1{
+	color: transparent;
+	background-color: ghostwhite;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 3px rgba(255,255,255,.5);
+   -webkit-background-clip: text; /*relevo no texto*/
+   -moz-background-clip: text;    /*relevo no texto*/
+    background-clip: text; 
+    font-size: 60px;
+    -webkit-text-stroke-width: 2px; /*borda no texto*/
+    -webkit-text-stroke-color: #000; /*borda no texto*/
+
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+header{
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+footer{
+	margin: 0px 0;
+	background-color: gray;
+}
+p{
+	color: #black;
+	font-size: 20px
+}
+h5{
+	color: black;
+	font-size: 30px;
+}
+button{
+	background-color: white;
+	border:2px blue;
+	color:black;
+	padding: 10px 20px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 20%;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+
+}
+.header-logo{
+	width: 80px;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto 0 auto;
+	padding: 10px 0 10px 0;
+
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header-nav ul{
+	height: 100%;
+}
+.header-nav ul li{
+	margin: 0 10px;
+	text-transform: uppercase;
+	list-style: none;
+}
+.header-nav ul li a:hover{
+	color: gold;
+	text-decoration: none;
+}
+.header-login ul{
+	height: 100%;
+	margin: 0 10px;
+}
+.banner {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+ }
+.banner video {
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  object-fit: cover;
+  width: 100%; 
+  background-position: center;
+}
+.video{
+padding-top: 60px;
+padding-bottom: 60px;
+margin: 120px 0;
+}
+.conteudo{
+	padding-top: 80px;
+	margin: 0px 0;
+}
+.textslide{
+	width: 50%;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.6);
+}
+.content{
+	text-align: justify;
+  position: relative;
+  color: #fff;
+}
+.banner .content h1{
+	font-family: "Big Shoulders Display",cursive;
+	text-transform: uppercase;
+	font-size: 4.3em;
+	margin: 0;
+	padding: 30px 100px;
+}
+.banner .content p{
+	font-size: 1.5em;
+  margin: 0;
+	padding: 5px 100px;
+	color: white;
+}
+.container:after{
+	content: "";
+	clear: both;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row; /*elementos dispostos em linha*/
+
+}
+.card{
+border-radius: 10px;
+border: solid 2px;	
+width: 300px;
+height: 500px;
+box-shadow: 10px 10px 10px 5px black; /*efeito sombreado do card*/
+/*margin: 100px 30px;*/
+margin: 10px 10px;
+/*padding: 20px 15px;*/
+padding: 30px;
+position:  relative;
+background: #fff;
+transition: 0.5s ease-in-out;
+animation-name: animacao;
+animation-duration: 6s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+}
+.container2 form{
+	flex-direction: row;
+	display: flex-center;
+}
+.submite{
+	position: absolute;
+	display: inline-block;
+	padding: 10px
+}
+.container2{
+  text-align: center;
+  color: transparent;
+  background-color: ghostwhite;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 1px 1px 3px rgba(255,255,255,.5);
+  -webkit-background-clip: text; /*relevo no texto*/
+  -moz-background-clip: text;    /*relevo no texto*/
+   background-clip: text; 
+   font-size: 40px;
+}
